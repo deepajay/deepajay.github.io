@@ -41,12 +41,17 @@
 		    .appendTo('#slideshow1');
 		},  3000);
 	</script>
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
 </head>
 <body class="home">
 
 	 <div class="loader"></div>
-	 
+
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
