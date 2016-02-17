@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Deepa & Ajay</title>
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script>
+	jQuery(function ($){
+		"use strict";
+		// Months = 0 to 11 (Jan to Dec)
+		var weddDay = new Date(1991, 1, 22);// YYYY, M, DD
+		$('#default-countdown').countdown({since: weddDay, format: 'YOD'});
+	});
+	</script>
+
+	<script>
+		$("#slideshow > div:gt(0)").hide();
+		$("#slideshow1 > div:gt(0)").hide();
+		setInterval(function() { 
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		},  3000);
+		setInterval(function() { 
+		  $('#slideshow1 > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow1');
+		},  3000);
+	</script>
+
+</head>
+<body class="home">
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1655131794746272";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Mobile navigation -->
+	<nav class="mobile-nav-menu">
+		<a class="mobile-logo" href="index.html">Deepa &amp; Ajay</a>
+		<a class="mobile-menu-btn" href="#"><span></span></a>
+		<div class="mobile-menu-container"></div>
+	</nav><!-- End .mobile-nav-menu -->
+
+	<!-- Header -->
+	<header class="default">
+		<nav>
+			<ul style="text-shadow: 5px 5px 10px black;">
+				<li><a title="The Couple" href="#couple">The Couple</a></li>
+				<li><a title="Bride's Side" href="#bridesmaid-gallery">Bride's Side</a></li>
+				<li><a title="Groom's Side" href="#groomsmen-gallery">Groom's Side</a></li>
+				<li><a title="Kids" href="#schedule">Kids</a></li>
+				<li><a title="Gallery" href="#couple-gallery">Gallery</a></li>
+				<li><a title="Message from Family" href="#recent-posts">Message from Family</a></li>
+				<li><a title="RSVP &amp; Schedule" href="#rsvp">Wishes</a></li>
+				<li><a title="Contact" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div>
+			<h1 style="text-shadow: 5px 5px 10px black;">Deepa &amp; Ajay</h1>
+			<span class="ceremony-date" style="text-shadow: 5px 5px 10px black;">February 22<sup>nd</sup>, 1991</span>
+		</div>
+		
+	</header>
+
+	<!-- Couple section -->
+	<section id="couple" class="row">
+		<div class="columns large-12">
+			<div class="columns large-4 medium-4">
+				<span class="headshot groom">
+					<img src="img/headshot-groom.png" alt="groom headshot" width="233">
+				</span>
+				<h3>Deepa</h3>
+				<p class="desc groom">
+					Frequently spotted on the streets of Aminabad shopping or enjoying Falooda Kulfi, our bride is the most emotional being in the history of mankind. There's no shortage of great tales about her, from playing multiple roles with highest level of excellence to being Superwoman. Looking slimmer is her worry but her children her priority.
+				</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<p class="giant-ampersand">&amp;</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<span class="headshot bride">
+					<img src="img/headshot-bride.png" alt="bride headshot" width="233">
+				</span>
+				<h3>Ajay</h3>
+				<p class="desc bride">
+					Banker by profession, chef from heart; our handsome groom is the foundation on which our family thrieves. This fitness freak never fails to support his family. With Big Bazaar as his favorite hangout spot, this guy's witty remarks and sense of humor are sufficient to fall in love with him. Facing any problem... well he has solution for everything. 
+				</p>
+			</div><!-- End .large-4 -->
+		</div><!-- End .large-12 -->
+	</section><!-- End #couple -->
+
+	<!-- Countdown section -->
+	<section style="color:black;" id="countdown">
+		<h2>Time spent Together</h2>
+		<div  id="default-countdown"></div>
+	</section><!-- End #countdown -->
+
+	<!-- Bridesmaids gallery section -->
+	<section id="bridesmaid-gallery">
+		<h2>Bride's Side</h2>
+		<nav class="dg-nav">
+			<span class="dg-prev">&lt;</span>
+			<span class="dg-next">&gt;</span>
+		</nav>
+		<div id="bridesmaid-carousel" class="dg-container">
+			<div class="dg-wrapper">
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/carousel/nana.png) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/nana.png" alt="maid of honor">
+					<div>
+						<span class="guest-name">K.G.D. Saxena</span>
+						<span class="guest-title">Father</span>
+						
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/carousel/nani.png) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/nani.png" alt="maid of honor">
+					<div>
+						<span class="guest-name">Ratna Saxena</span>
+						<span class="guest-title">Mother</span>
+						
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/carousel/mama.png) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/mama.png" alt="maid of honor">
+					<div>
+						<span class="guest-name">Sanjay Saxena</span>
+						<span class="guest-title">Brother</span>
+						
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/carousel/mami.png) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/mami.png" alt="maid of honor">
+					<div>
+						<span class="guest-name">Anshu Mala Saxena</span>
+						<span class="guest-title">Sister-in-Law</span>
+						
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/carousel/aviral.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/aviral.jpg" alt="maid of honor">
+					<div>
+						<span class="guest-name">Aviral Saxena</span>
+						<span class="guest-title">Nephew</span>
+						
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+			</div><!-- End .dg-wrapper -->
+		</div><!-- End #bridesmaid-carousel -->
+		<div class="bridemaids-mobile-slider-wrap"><div class="bridemaids-mobile-slider"></div></div>
+	</section><!-- End #bridesmaid-gallery -->
+
+	<!-- Groomsmen gallery section -->
+	<section id="groomsmen-gallery">
+		<h2>Groom's Side</h2>
+		<nav class="dg-nav-g">
+			<span class="dg-prev-g">&lt;</span>
+			<span class="dg-next-g">&gt;</span>
+		</nav>
+		<div id="groomsmen-carousel" class="dg-container">
+			<div class="dg-wrapper-g">
+
+				<a href="#" style="background:url(img/carousel/babu.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/babu.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Ramesh Chandra Saxena</span>
+						<span class="guest-title">Father</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/dadi.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/dadi.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Sharda Saxena</span>
+						<span class="guest-title">Mother</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+		
+				<a href="#" style="background:url(img/carousel/vinay.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/vinay.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Vinay Saxena</span>
+						<span class="guest-title">Brother</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+				
+				<a href="#" style="background:url(img/carousel/savita.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/savita.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Savita Saxena</span>
+						<span class="guest-title">Sister-in-Law</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/sanjay.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/sanjay.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Sanjay Saxena</span>
+						<span class="guest-title">Brother</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/manju.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/manju.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Manju Saxena</span>
+						<span class="guest-title">Sister-in-Law</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/manoj.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/manoj.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Manoj Saxena</span>
+						<span class="guest-title">Brother</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/anjana.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/anjana.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Anjana Saxena</span>
+						<span class="guest-title">Sister-in-Law</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/shubhi.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/shubhi.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Shubhi Saxena</span>
+						<span class="guest-title">Niece</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/divya.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/divya.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Divya Saxena</span>
+						<span class="guest-title">Niece</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/vaibhav.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/vaibhav.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Vaibhav Saxena</span>
+						<span class="guest-title">Nephew</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/aditi.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/aditi.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Aditi Saxena</span>
+						<span class="guest-title">Niece</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+
+				<a href="#" style="background:url(img/carousel/vidhi.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/carousel/vidhi.jpg" alt="groomsman">
+					<div>
+						<span class="guest-name">Vidhi Saxena</span>
+						<span class="guest-title">Niece</span>
+						<span class="guest-story"></span>
+					</div>
+				</a>
+			</div><!-- End .dg-wrapper-g -->
+		</div><!-- End #groomsmen-carousel -->
+		<div class="groomsmen-mobile-slider-wrap"><div class="groomsmen-mobile-slider"></div></div>
+	</section><!-- End #groomsmen-gallery -->
+
+	<!-- Schedule section -->
+	<section id="schedule">
+
+		<h2><b>Kids</b></h2>
+
+		<div class="left">
+			<h2>Mayur Saxena</h2>
+			<div id="slideshow">
+			   <div>
+			     <img src="img/kids/m1.jpg">
+			   </div>
+			   <div>
+			     <img src="img/kids/m2.jpg">
+			   </div>
+			   <div>
+			     <img src="img/kids/m3.jpg">
+			   </div>
+			</div>
+		</div>
+
+		<div class="right">
+			<h2>Ayushi Saxena</h2>
+			<div id="slideshow1">
+			   <div>
+			     <img src="img/kids/a1.jpg">
+			   </div>
+			   <div>
+			     <img src="img/kids/a2.jpg">
+			   </div>
+			   <div>
+			     <img src="img/kids/a3.jpg">
+			   </div>
+			</div>
+		</div>
+
+		
+
+		
+	</section><!-- End #schedule -->
+
+
+	<!-- Couple gallery section -->
+	<section id="couple-gallery">
+		<h2>Gallery</h2>
+
+		<div class="il-scattered-gallery">
+			<a href="#"><img src="img/gallery/taj.png" alt=""></a>
+			<a href="#"><img src="img/gallery/singapore.jpg" alt=""></a>
+			<a href="#"><img src="img/gallery/IMG_2151.jpg" alt=""></a>
+			<a href="#"><img src="img/gallery/DSC_0243.jpg" alt=""></a>
+			<a href="#"><img src="img/gallery/sindoor.png" alt=""></a>
+			<a href="#"><img src="img/gallery/IMG_0517.jpg" alt=""></a>
+			<a href="#"><img src="img/gallery/IMG_6262.jpg" alt=""></a>
+		</div>
+		<div class="couple-slideshow-wrap">
+			<ul id="couple-slideshow"></ul>
+			<ul class="couple-thumbs"></ul>
+		</div><!-- End .couple-slideshow-wrap -->
+		<a id="gallery-launcher" href="#">Click to view gallery</a>
+		<div class="couple-mobile-slider-wrap"><div class="couple-mobile-slider"></div></div>
+	</section><!-- End #couple-gallery -->
+
+	<!-- Recent posts section -->
+	<section id="recent-posts">
+		<h2>Message from Family</h2>
+		
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/y9kPHcCPQIo?rel=0" frameborder="0" allowfullscreen></iframe>
+		
+		<div class="blog-posts-wrap">
+			
+		</div><!-- End .blog-posts-wrap -->
+	</section><!-- End #recent-posts -->
+
+	<!-- RSVP section -->
+	<section id="rsvp">	
+		<div class="rsvp-form-wrap">
+
+			<h2>Extend your Wishes</h2>
+
+			<div>
+				<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_56c4372208455(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_56c4372208455"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_56c4372208455=document.createElement('script');fcs_56c4372208455.type="text/javascript";fcs_56c4372208455.src=ajaxpath_56c4372208455((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=56c4372208455&s=&Size=10#!56c4372208455");setTimeout("document.getElementById('fcs_div_56c4372208455').appendChild(fcs_56c4372208455)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+			</div>
+			
+			<!--
+			<div style="overflow:scroll">
+				<span style="display:none;">***</span>
+				<script type="text/javascript" language="javascript" id="pnyxeDiscussItJs" src="https://www.pnyxe.shadow.com/PnyxeDiscussItJs.jsp">
+				</script>
+				<script type="text/javascript" language="javascript" id="pnyxeDiscussItInitJs367080">try { var zpbw_webWidgetClientKey = "BS_r6yu_km3oWS2JQBGtAw"; var pnyxeDiscussIt = new PnyxeDiscussIt(); pnyxeDiscussIt.init("367080"); } catch (e) {}
+				</script>
+				<noscript><a href="https://www.pnyxe.shadow.com/DiscussIt-comment-system?utm_source=wwcCodeSpanPromotion1" rel="nofollow">Comment System</a>
+				</noscript>
+			</div>
+			
+			-->
+			<!--<iframe src="https://docs.google.com/forms/d/1ULKMKZXM5zoox_YnDtznJ-SB_87aLQAe2bIUgLUED2E/viewform?embedded=true" width="100%" height="90%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+			
+			<!--<p class="rsvp-desc">Come and join our wedding party Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nunc felectus placerat.</p>
+
+    		<form id="rsvp-form">
+				
+    			<script type="text/javascript">
+				    var clicks = 0;
+				    function onClick() {
+				        clicks += 1;
+				        document.getElementById("clicks").innerHTML = clicks;
+				    };
+				</script>
+				<p>Clicks: <a id="clicks">0</a></p>
+    			<button type="button" onClick="onClick()">Press to extend your wishes</button>
+
+			</form>-->
+		</div><!-- End .rsvp-form-wrap -->
+
+	</section><!-- End #rsvp -->
+
+	
+	<!-- Contact section -->
+	<section id="contact">
+		<div class="contact-form-wrap">
+			<h2>Contact</h2>
+			<p class="contact-desc">Any further questions please send us a message in the comments box below or contact us at <em>415 183 1239</em></p>
+			<form id="contact-form" action="sendemail.php" method="post" data-abide>
+				<div class="columns large-12">
+					<label for="your-name">Name (required)</label>
+					<input id="your-name" name="your_name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
+
+					<label for="your-email">Email Address (required)</label>
+					<input id="your-email" name="your_email" type="email" placeholder="johndoe@email.com" required>
+					<small class="error">Please enter a valid email.</small>
+
+					<label for="comments">Comment (required)</label>
+					<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+				</div><!-- End .large-12 -->
+				<div class="columns large-12">
+					<input class="button" type="submit" value="Submit" name="contact_submit">
+				</div><!-- End .large-12 -->
+			</form>
+		</div><!-- End .contact-form-wrap -->
+	</section><!-- End #contact -->
+
+	<footer>
+		<p>
+			&copy; 2016 Mayur Saxena
+			<span class="social-icons">
+				
+				<a title="Like us on Facebook" href="https://www.facebook.com/mayurajaysaxena" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				<a title="Follow us on Twitter" href="https://twitter.com/MayurAjaySaxena" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				<a title="We're on Pinterest" href="https://www.instagram.com/mayurajaysaxena" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			  </span>
+		</p>
+	</footer>
+
+	<script src="js/foundation.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+	
+	<script type="text/javascript">
+		$(function() {
+			$('#bridesmaid-carousel').gallery();
+			$('#groomsmen-carousel').ggallery();
+			$('#couple-gallery').ilScatteredGallery();
+		});
+	</script>
+
+	<script>
+		jQuery(document).foundation();
+	</script>
+</body>
+</html>
